@@ -31,6 +31,10 @@ export const App = () => {
     setIsInitialized(true)
   }, [isLoading])
 
+  useEffect(() => {
+
+  }, [])
+
   if (!isInitialized) {
     return (
       <div className={styles.circularProgressContainer}>
