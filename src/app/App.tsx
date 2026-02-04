@@ -18,7 +18,9 @@ export const App = () => {
   const [isInitialized, setIsInitialized] = useState(false)
 
   const { data, isLoading } = useMeQuery()
+
   const dispatch = useAppDispatch()
+
   const theme = getTheme(themeMode)
 
   useEffect(() => {
