@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/lankut/project_todolists",
+  "homepage": "https://lankut.github.io/project_todolists/",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
