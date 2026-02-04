@@ -6,7 +6,7 @@ import { HashRouter } from "react-router"
 import { store } from "./app/store"
 
 createRoot(document.getElementById("root")!).render(
-  <HashRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter>
     <Provider store={store}>
       <App />
     </Provider>
