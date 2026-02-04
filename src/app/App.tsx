@@ -14,7 +14,7 @@ import styles from "./App.module.css"
 
 export const App = () => {
   const themeMode = useAppSelector(selectThemeMode)
-  
+
   const [isInitialized, setIsInitialized] = useState(false)
 
   const { data, isLoading } = useMeQuery()
@@ -30,6 +30,10 @@ export const App = () => {
     }
     setIsInitialized(true)
   }, [isLoading])
+
+  useEffect(() => {
+    console.log("?")
+  }, [])
 
   if (!isInitialized) {
     return (
